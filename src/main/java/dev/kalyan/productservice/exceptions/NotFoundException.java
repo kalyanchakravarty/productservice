@@ -1,2 +1,9 @@
-package dev.kalyan.productservice.exceptions;public class NotFoundException {
+package dev.kalyan.productservice.exceptions;
+
+public class NotFoundException extends Exception{
+
+    public NotFoundException(String message)
+    {
+        super(message);
+    }
 }

@@ -1,2 +1,5 @@
-package dev.kalyan.productservice.models;public class Category {
-}
+package dev.kalyan.productservice.models;
+
+public class Category extends BaseModel {
+        private String name;
+        }
