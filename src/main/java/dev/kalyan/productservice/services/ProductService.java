@@ -1,5 +1,4 @@
 package dev.kalyan.productservice.services;
-
 import dev.kalyan.productservice.dtos.GenericProductDto;
 import dev.kalyan.productservice.exceptions.NotFoundException;
 
@@ -12,9 +11,10 @@ public interface ProductService {
 
     GenericProductDto createProduct(GenericProductDto product);
 
+
     GenericProductDto deleteProductById(String id) throws NotFoundException;
 
     List<GenericProductDto> getAllProducts();
 
-    void updateProductWithId(Long id) throws NotFoundException;
+    GenericProductDto updateProductWithId(Long id, GenericProductDto product) throws NotFoundException;
 }

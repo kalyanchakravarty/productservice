@@ -2,7 +2,6 @@ package dev.kalyan.productservice.services;
 
 import dev.kalyan.productservice.dtos.GenericProductDto;
 import dev.kalyan.productservice.exceptions.NotFoundException;
-import dev.kalyan.productservice.models.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,7 +30,7 @@ public class SelfProductServiceImpl implements ProductService{
     }
 
     @Override
-    public void updateProductWithId(Long id) throws NotFoundException {
-
+    public GenericProductDto updateProductWithId(Long id, GenericProductDto productDto) throws NotFoundException {
+        return null;
     }
 }

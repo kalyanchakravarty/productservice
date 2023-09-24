@@ -42,9 +42,9 @@ public class ProductController {
     }
 
     @PutMapping("{id}")
-    public void updateProductWithId(@PathVariable("id") Long id) throws NotFoundException
+    public GenericProductDto updateProductWithId(@PathVariable("id") Long id, @RequestBody GenericProductDto product) throws NotFoundException
     {
-        productService.updateProductWithId(id);
+        return productService.updateProductWithId(id, product);
     }
 
 
